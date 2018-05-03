@@ -1,32 +1,24 @@
 # fwpd
 
-FIXME: description
+Consuming a CSV
 
-## Installation
 
-Download from http://example.com/FIXME.
 
-## Usage
+## Function Explanation
 
-FIXME: explanation
+vamp-keys: Vector of keys used to create vampire map
 
-    $ java -jar fwpd-0.1.0-standalone.jar [args]
+str->int: Converts string to integer
 
-## Options
+conversions: associates conversion function to each vamp-keys. 
 
-FIXME: listing of options this app accepts.
+convert: takes vamp-key and value and returns converted value
 
-## Examples
+parse: takes a string and spilts it on the newline to create a seq of strings. Maps over the seq of strings spiltting at the comma character.
 
-...
+mapify: takes the seq of vectors and combines with vamp-keys to create maps.
 
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+glitter-filter: filters out those with an index less than 3.
 
 ## License
 
